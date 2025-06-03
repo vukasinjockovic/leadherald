@@ -1,0 +1,122 @@
+[
+    {
+        "name": "before_sessions_insert",
+        "table": "sessions",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_sessions_insert` BEFORE INSERT ON `sessions` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_shops_insert",
+        "table": "bp_shops",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_shops_insert` BEFORE INSERT ON `bp_shops` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_uploads_insert",
+        "table": "bp_uploads",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_uploads_insert` BEFORE INSERT ON `bp_uploads` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_upload_relationships_insert",
+        "table": "bp_upload_relationships",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_upload_relationships_insert` BEFORE INSERT ON `bp_upload_relationships` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_activity_log_insert",
+        "table": "activity_log",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_activity_log_insert` BEFORE INSERT ON `activity_log` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_cpts_insert",
+        "table": "bp_cpts",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_cpts_insert` BEFORE INSERT ON `bp_cpts` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_cpt_relationships_insert",
+        "table": "bp_cpt_relationships",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_cpt_relationships_insert` BEFORE INSERT ON `bp_cpt_relationships` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_forms_insert",
+        "table": "bp_forms",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_forms_insert` BEFORE INSERT ON `bp_forms` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_form_submissions_insert",
+        "table": "bp_form_submissions",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_form_submissions_insert` BEFORE INSERT ON `bp_form_submissions` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_forms_core_meta_insert",
+        "table": "bp_forms_core_meta",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_forms_core_meta_insert` BEFORE INSERT ON `bp_forms_core_meta` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_core_meta_insert",
+        "table": "bp_core_meta",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_core_meta_insert` BEFORE INSERT ON `bp_core_meta` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_users_core_meta_insert",
+        "table": "bp_users_core_meta",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_users_core_meta_insert` BEFORE INSERT ON `bp_users_core_meta` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_shops_core_meta_insert",
+        "table": "bp_shops_core_meta",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_shops_core_meta_insert` BEFORE INSERT ON `bp_shops_core_meta` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_terms_insert",
+        "table": "bp_terms",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_terms_insert` BEFORE INSERT ON `bp_terms` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_term_relationships_insert",
+        "table": "bp_term_relationships",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_term_relationships_insert` BEFORE INSERT ON `bp_term_relationships` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_leads_insert",
+        "table": "bp_leads",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_leads_insert` BEFORE INSERT ON `bp_leads` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_leads_core_meta_insert",
+        "table": "bp_leads_core_meta",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_leads_core_meta_insert` BEFORE INSERT ON `bp_leads_core_meta` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_menus_insert",
+        "table": "bp_menus",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_menus_insert` BEFORE INSERT ON `bp_menus` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_menu_items_insert",
+        "table": "bp_menu_items",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_menu_items_insert` BEFORE INSERT ON `bp_menu_items` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_user_relationships_insert",
+        "table": "bp_user_relationships",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_user_relationships_insert` BEFORE INSERT ON `bp_user_relationships` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_pages_insert",
+        "table": "bp_pages",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_pages_insert` BEFORE INSERT ON `bp_pages` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_payment_methods_core_meta_insert",
+        "table": "bp_payment_methods_core_meta",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_payment_methods_core_meta_insert` BEFORE INSERT ON `bp_payment_methods_core_meta` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_payment_methods_insert",
+        "table": "bp_payment_methods",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_payment_methods_insert` BEFORE INSERT ON `bp_payment_methods` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    },
+    {
+        "name": "before_bp_users_insert",
+        "table": "bp_users",
+        "definition": "CREATE DEFINER=`app`@`localhost` TRIGGER `before_bp_users_insert` BEFORE INSERT ON `bp_users` FOR EACH ROW BEGIN\n                IF NEW.id IS NULL THEN\n                    SET NEW.id = ordered_uuid();\n                END IF;\n            END"
+    }
+]
