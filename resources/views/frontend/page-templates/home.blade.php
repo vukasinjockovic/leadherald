@@ -28,28 +28,28 @@
                             <div>
                                 <div class="hidden lg:block">
                                     <div class="flex gap-3 flex-wrap ">
-                                        <div class="flex-grow lg:flex-initial"><a class="flex-grow lg:flex-initial"
-                                                href="/pricing"><button
-                                                    class="inline-flex select-none items-center justify-center text-lg font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-primary bg-primary text-primary-foreground hover:bg-primary/90 px-6 w-full py-[13px] rounded-full border-none shadow-md">
-                                                    <div class="flex items-center gap-2"><svg viewBox="0 0 34 32"
-                                                            xmlns="http://www.w3.org/2000/svg" class="h-5 w-5">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                                d="M0.773438 16.2227C0.773438 21.2437 2.16071 25.0453 4.93524 27.6275C7.70978 30.2097 11.6937 31.5009 16.8871 31.5009C22.0982 31.5009 26.0911 30.2097 28.8656 27.6275C31.6402 25.0453 33.0274 21.2437 33.0274 16.2227C33.0274 11.1837 31.6402 7.3821 28.8656 4.8178C26.0911 2.23557 22.0982 0.944458 16.8871 0.944458C11.6937 0.944458 7.70978 2.23557 4.93524 4.8178C2.16071 7.3821 0.773438 11.1837 0.773438 16.2227ZM22.6116 21.9159C20.4415 24.086 18.5862 25.2125 17.0457 25.2953C14.4546 25.4209 12.1979 22.97 11.1543 21.8365C11.0067 21.6763 10.8834 21.5423 10.7868 21.4458C10.0073 20.6663 7.75441 17.6103 7.82869 16.0783C7.91151 14.5378 9.03798 12.6825 11.2081 10.5124C13.3782 8.34226 15.2293 7.22005 16.7612 7.14578C19.1426 7.03031 21.2013 8.9992 23.0201 10.9953C24.6313 12.7635 26.0525 14.8308 25.9782 16.3628C25.9039 17.8947 24.7817 19.7458 22.6116 21.9159Z"
-                                                                fill="#fff"></path>
-                                                        </svg><span class="hidden sm:inline">Start for $0</span></div>
-                                                </button></a></div>
-                                        <div class="flex-grow lg:flex-initial"><a class="flex-grow lg:flex-initial"
-                                                href="/pricing"><button
-                                                    class="inline-flex select-none items-center justify-center text-lg font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border bg-background hover:bg-accent hover:text-accent-foreground px-6 w-full py-3 rounded-full shadow-md">
-                                                    <div class="flex items-center gap-2"><svg width="20"
-                                                            height="20" viewBox="0 0 24 24" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            aria-label="Download icon">
-                                                            <path
-                                                                d="M12 16L7 11L8.4 9.55L11 12.15V4H13V12.15L15.6 9.55L17 11L12 16ZM4 20V15H6V18H18V15H20V20H4Z"
-                                                                fill="currentColor"></path>
-                                                        </svg>Download desktop app</div>
-                                                </button></a></div>
+                                        <div class="flex-grow lg:flex-initial">
+                                            <a class="flex-grow lg:flex-initial" href="#services">
+                                                <button class="cursor-pointer inline-flex select-none items-center justify-center text-lg font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-primary bg-primary text-primary-foreground hover:bg-primary/90 px-6 w-full py-[13px] rounded-full border-none shadow-md">
+                                                    <div class="flex items-center gap-2">
+                                                        @svg('phosphor-clipboard-text', ['class' => 'h-5 w-5'])
+                                                        <span class="hidden sm:inline">
+                                                            Our Services
+                                                        </span>
+                                                    </div>
+                                                </button>
+                                            </a>
+                                        </div>
+                                        <div class="flex-grow lg:flex-initial">
+                                            <a class="flex-grow lg:flex-initial" href="#contact-us">
+                                                <button class="cursor-pointer inline-flex select-none items-center justify-center text-lg font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-border bg-background hover:bg-accent hover:text-accent-foreground px-6 w-full py-3 rounded-full shadow-md">
+                                                    <div class="flex items-center gap-2">
+                                                        @svg('phosphor-envelope', ['class' => 'h-5 w-5'])
+                                                        Contact Us
+                                                    </div>
+                                                </button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="block lg:hidden">
@@ -187,35 +187,20 @@
                             </div>
                         </div>
                         <div class="lg:flex hidden flex-1">
-                            <div class="grid grid-cols-1 gap-4 flex-grow"><button type="button"
-                                    class="w-full p-0 border-0 bg-transparent cursor-pointer relative"><img
+                            <div class="grid grid-cols-1 gap-4 flex-grow">
+                                <div class="w-full p-0 border border-gray-300 rounded-xl bg-transparent cursor-pointer relative">
+                                    <img
                                         class="shadow-phone rounded-[40px] bg-white bg-opacity-75 overflow-hidden w-full h-auto p-0"
-                                        src="https://icon-cdn.com/gruns static final.png" alt="Poster">
-                                    <div
-                                        class="rounded-[40px] absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 bg-black/20">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                            fill="currentColor" aria-hidden="true" data-slot="icon"
-                                            class="h-16 w-16 text-white">
-                                            <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
-                                            <path fill-rule="evenodd"
-                                                d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
-                                                clip-rule="evenodd"></path>
-                                        </svg></div>
-                                </button><button type="button"
-                                    class="hidden sm:block w-full p-0 border-0 bg-transparent cursor-pointer relative"><img
-                                        class="w-full h-auto shadow-phone rounded-[40px] bg-white bg-opacity-75 overflow-hidden p-0"
-                                        src="https://icon-cdn.com/jitterkiller (1).png" alt="Poster">
-                                    <div
-                                        class="rounded-[40px] absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 bg-black/20">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                            fill="currentColor" aria-hidden="true" data-slot="icon"
-                                            class="h-16 w-16 text-white">
-                                            <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
-                                            <path fill-rule="evenodd"
-                                                d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 0 1 0-1.113ZM17.25 12a5.25 5.25 0 1 1-10.5 0 5.25 5.25 0 0 1 10.5 0Z"
-                                                clip-rule="evenodd"></path>
-                                        </svg></div>
-                                </button></div>
+                                        src="{{ app_asset('images/social-media-marketing.png') }}" alt="Poster" 
+                                    />
+                                </div>
+                                <div class="w-full p-0 border border-gray-300 rounded-xl bg-transparent cursor-pointer relative">
+                                    <img
+                                        class="shadow-phone rounded-[40px] bg-white bg-opacity-75 overflow-hidden w-full h-auto p-0"
+                                        src="{{ app_asset('images/expanding-business.png') }}" alt="Poster" 
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -225,5 +210,5 @@
         
     </div>
 
-    
+
 </main>
