@@ -1,11 +1,81 @@
 @import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import 'variables';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+@config "../../tailwind.config.mjs";
+
+
+
+[x-cloak] {
+    display: none !important;
+}
+
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-h: 'League Spartan', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    html {
+        @apply scroll-smooth;
+        font-family: var(--font-sans);
+    }
+    body {
+        overflow-x: hidden;
+        @apply bg-background text-foreground;
+        /* font-feature-settings: "rlig" 1, "calt" 1; */
+        font-synthesis-weight: none;
+        text-rendering: optimizeLegibility;
+    }
+
+    .font-h {
+        font-family: var(--font-h);
+    }
+
+    [type="checkbox"]:indeterminate {
+        @apply bg-primary;
+    }
+  
+    @media (max-width: 900px) {
+        .container {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+    }
+  
+    @media (width>=1500px) {
+      .container {
+          max-width: 1280px
+      }
+    }
+  
+    .card {
+        @apply rounded-lg border bg-card text-card-foreground p-4 md:p-6 shadow-sm;
+    }
+  
+    .card-header {
+        @apply flex flex-col space-y-1.5 pb-3 border-b border-border mb-5 gap-y-1;
+    }
+  
+    .card-title {
+        @apply text-lg font-semibold leading-none tracking-tight;
+    }
+  
+    .card-description {
+        @apply text-sm text-muted-foreground;
+    }
+  
+    .card-footer {
+        @apply flex items-center mt-5 pt-3 border-t border-border;
+    }
+  }

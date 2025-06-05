@@ -1,0 +1,114 @@
+@theme {
+    --primary: #000;
+    --primary-foreground: #fff;
+    --primary-hover: #001319;
+}
+
+@theme {
+    /* Base Colors */
+    --background: #F3F2F1;
+    --foreground: #0A0A0A;
+    --card: #ffffff;
+    --card-foreground: #0A0A0A;
+    --popover: #ffffff;
+    --popover-foreground: #0A0A0A;
+    
+    /* Primary (dark tone) */
+    --primary: #00171F; /* from hsl(240,5.9%,10%) */
+    --primary-foreground: #fff; /* from hsl(0,0%,98%) */
+    --primary-hover: #24242C; /* a slightly lighter variant */
+    
+    /* Secondary (light tone) */
+    --secondary: #00A8E8; /* from hsl(240,4.8%,95.9%) */
+    --secondary-foreground: #00171F; /* from hsl(240,5.9%,10%) */
+    --secondary-hover: #1FBFFF; /* a gentle hover change */
+    
+    /* Muted */
+    --muted: #F4F4F5;
+    --muted-foreground: #71717A; /* approximated from hsl(240,3.8%,46.1%) */
+    --muted-hover: #E4E4E7;
+    
+    /* Accent */
+    --accent: #F4F4F5;
+    --accent-foreground: #18181B;
+    
+    /* Structural Colors */
+    --border: #E4E4E7; /* from hsl(240,5.9%,90%) */
+    --input: #E4E4E7;
+    --ring: #A1A1AA; /* from hsl(240,5%,64.9%) */
+    
+    /* Danger (using destructive as base) */
+    --danger: #DC2626; /* a strong red (from hsl(0,72.22%,50.59%)) */
+    --danger-foreground: #F9F9F9; /* near white */
+    --danger-hover: #B91C1C; /* a slightly deeper red */
+    
+    /* Success */
+    --success: #16A34A; /* a rich green */
+    --success-foreground: #F9F9F9;
+    --success-hover: #15803D; /* a touch darker for hover */
+    
+    /* Info */
+    --info: #3B82F6; /* a clear blue */
+    --info-foreground: #F9F9F9;
+    --info-hover: #2563EB; /* a deeper blue on hover */
+    
+    /* Warning */
+    --warning: #F59E0B; /* an amber tone */
+    --warning-foreground: #0A0A0A; /* dark text for contrast */
+    --warning-hover: #D97706; /* a slightly deeper amber */
+}
+
+.dark {
+    /* Dark Mode Colors */
+    --background: #0A0A0A;
+    --foreground: #F9F9F9;
+    --card: #0A0A0A;
+    --card-foreground: #F9F9F9;
+    --popover: #0A0A0A;
+    --popover-foreground: #F9F9F9;
+    
+    /* Primary: inverted so that text (foreground) becomes dark */
+    --primary: #F9F9F9;
+    --primary-foreground: #18181B;
+    --primary-hover: #F3F3F3;
+    
+    /* Secondary */
+    --secondary: #27272A; /* a dark gray */
+    --secondary-foreground: #F9F9F9;
+    --secondary-hover: #323236;
+    
+    /* Muted */
+    --muted: #27272A;
+    --muted-foreground: #A1A1AA;
+    --muted-hover: #2F2F33;
+    
+    /* Accent */
+    --accent: #27272A;
+    --accent-foreground: #F9F9F9;
+    
+    /* Structural */
+    --border: #27272A;
+    --input: #27272A;
+    --ring: #D4D4D8;
+    
+    /* Danger */
+    --danger: #7F1D1D; /* a more subdued red in dark mode */
+    --danger-foreground: #FAFAFA;
+    --danger-hover: #991B1B;
+    
+    /* Success */
+    --success: #22C55E; /* a brighter green for dark backgrounds */
+    --success-foreground: #0A0A0A;
+    --success-hover: #1F9F4A;
+    
+    /* Info */
+    --info: #1E40AF; /* a deeper blue */
+    --info-foreground: #0A0A0A;
+    --info-hover: #1E3A8A;
+    
+    /* Warning */
+    --warning: #FBBF24; /* a vibrant amber */
+    --warning-foreground: #0A0A0A;
+    --warning-hover: #F59E0B;
+}
+  
