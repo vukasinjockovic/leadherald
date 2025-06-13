@@ -102,7 +102,7 @@
                     <div
                         class="lg:max-w-full hidden md:grid lg:flex lg:flex-row gap-4 h-fit">
                         <div class="flex-1">
-                            <div
+                            {{-- <div
                                 class="shadow-phone rounded-[40px] overflow-hidden h-full lg:aspect-auto aspect-[9/19]">
                                 <div class="relative h-full w-fit">
                                     <div class="flex h-full">
@@ -184,7 +184,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="lg:flex hidden flex-1">
                             <div class="grid grid-cols-1 gap-4 flex-grow">
